@@ -3,7 +3,7 @@
   "name": "file-info",
   "title": "File Info",
   "description": "Quickly view or strip metadata (EXIF, GPS, IPTC, etc.) from selected files for privacy and cleaner sharing. Works on macOS and Windows.",
-  "icon": "extension-icon.png",
+  "icon": "assets/extension-icon.png",
   "author": "almatkai",
   "contributors": [
     "SandeepBaskaran"

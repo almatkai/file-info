@@ -1,10 +1,10 @@
-import { exec } from "node:child_process";
+import { execFile } from "node:child_process";
 import * as fs from "node:fs/promises";
 import * as path from "node:path";
 import { promisify } from "node:util";
 import { Icon } from "@raycast/api";
 
-const execAsync = promisify(exec);
+const execFileAsync = promisify(execFile);
 
 let ffprobePath: string | null | undefined;
 
@@ -42,15 +42,11 @@ async function findFfprobe(): Promise<string | null> {
     "/usr/bin/ffprobe", // System install
   ];
 
-  // Try to use 'which' command first (respects user's PATH)
+  // Resolve from PATH on both Windows and macOS.
   try {
-    const { stdout } = await execAsync("which ffprobe", {
-      env: {
-        ...process.env,
-        PATH: "/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin",
-      },
-    });
-    const foundPath = stdout.trim();
+    const locator = process.platform === "win32" ? "where.exe" : "which";
+    const { stdout } = await execFileAsync(locator, [process.platform === "win32" ? "ffprobe.exe" : "ffprobe"]);
+    const foundPath = stdout.split(/\r?\n/).find(Boolean)?.trim();
     if (foundPath) {
       ffprobePath = foundPath;
       return ffprobePath;
@@ -86,7 +82,7 @@ export async function getFileInfo(filePath: string): Promise<FileInfo> {
   let owner = "";
   let group = "";
   try {
-    const { stdout } = await execAsync(`ls -ld "${filePath}"`);
+    const { stdout } = await execFileAsync("ls", ["-ld", filePath]);
     const parts = stdout.trim().split(/\s+/);
     if (parts.length >= 4) {
       owner = parts[2];
@@ -99,7 +95,7 @@ export async function getFileInfo(filePath: string): Promise<FileInfo> {
   // Get MIME type
   let mimeType = "";
   try {
-    const { stdout } = await execAsync(`file --mime-type -b "${filePath}"`);
+    const { stdout } = await execFileAsync("file", ["--mime-type", "-b", filePath]);
     mimeType = stdout.trim();
   } catch {
     // Ignore errors
@@ -112,10 +108,28 @@ export async function getFileInfo(filePath: string): Promise<FileInfo> {
   // Check if it's an image
   if ([".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".tiff", ".heic"].includes(ext)) {
     try {
-      const { stdout } = await execAsync(`sips -g pixelWidth -g pixelHeight "${filePath}"`);
+      const ffprobe = await findFfprobe();
+      const { stdout } = ffprobe
+        ? await execFileAsync(ffprobe, [
+            "-v",
+            "error",
+            "-select_streams",
+            "v:0",
+            "-show_entries",
+            "stream=width,height",
+            "-of",
+            "csv=s=x:p=0",
+            filePath,
+          ])
+        : process.platform === "darwin"
+          ? await execFileAsync("sips", ["-g", "pixelWidth", "-g", "pixelHeight", filePath])
+          : { stdout: "" };
+      const compactMatch = stdout.trim().match(/^(\d+)x(\d+)$/);
       const widthMatch = stdout.match(/pixelWidth:\s*(\d+)/);
       const heightMatch = stdout.match(/pixelHeight:\s*(\d+)/);
-      if (widthMatch && heightMatch) {
+      if (compactMatch) {
+        dimensions = `${compactMatch[1]} × ${compactMatch[2]}`;
+      } else if (widthMatch && heightMatch) {
         dimensions = `${widthMatch[1]} × ${heightMatch[1]}`;
       }
     } catch {
@@ -130,9 +144,17 @@ export async function getFileInfo(filePath: string): Promise<FileInfo> {
     // Try to get dimensions with ffprobe
     if (ffprobe) {
       try {
-        const { stdout } = await execAsync(
-          `"${ffprobe}" -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 "${filePath}"`,
-        );
+        const { stdout } = await execFileAsync(ffprobe, [
+          "-v",
+          "error",
+          "-select_streams",
+          "v:0",
+          "-show_entries",
+          "stream=width,height",
+          "-of",
+          "csv=s=x:p=0",
+          filePath,
+        ]);
         const trimmed = stdout.trim();
         if (trimmed?.includes("x")) {
           dimensions = trimmed.replace("x", " × ");
@@ -145,7 +167,13 @@ export async function getFileInfo(filePath: string): Promise<FileInfo> {
     // Try mdls as fallback for dimensions if ffprobe didn't work
     if (!dimensions) {
       try {
-        const { stdout } = await execAsync(`mdls -name kMDItemPixelWidth -name kMDItemPixelHeight "${filePath}"`);
+        const { stdout } = await execFileAsync("mdls", [
+          "-name",
+          "kMDItemPixelWidth",
+          "-name",
+          "kMDItemPixelHeight",
+          filePath,
+        ]);
         const widthMatch = stdout.match(/kMDItemPixelWidth\s*=\s*(\d+)/);
         const heightMatch = stdout.match(/kMDItemPixelHeight\s*=\s*(\d+)/);
         if (widthMatch && heightMatch) {
@@ -159,9 +187,15 @@ export async function getFileInfo(filePath: string): Promise<FileInfo> {
     // Try to get duration with ffprobe first
     if (ffprobe) {
       try {
-        const { stdout } = await execAsync(
-          `"${ffprobe}" -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${filePath}"`,
-        );
+        const { stdout } = await execFileAsync(ffprobe, [
+          "-v",
+          "error",
+          "-show_entries",
+          "format=duration",
+          "-of",
+          "default=noprint_wrappers=1:nokey=1",
+          filePath,
+        ]);
         const seconds = Number.parseFloat(stdout.trim());
         if (!Number.isNaN(seconds)) {
           duration = formatDuration(seconds);
@@ -174,7 +208,7 @@ export async function getFileInfo(filePath: string): Promise<FileInfo> {
     // Try mdls as fallback for duration if ffprobe didn't work
     if (!duration) {
       try {
-        const { stdout } = await execAsync(`mdls -name kMDItemDurationSeconds "${filePath}"`);
+        const { stdout } = await execFileAsync("mdls", ["-name", "kMDItemDurationSeconds", filePath]);
         const match = stdout.match(/kMDItemDurationSeconds\s*=\s*([\d.]+)/);
         if (match) {
           const seconds = Number.parseFloat(match[1]);
@@ -195,9 +229,15 @@ export async function getFileInfo(filePath: string): Promise<FileInfo> {
     // Try ffprobe first
     if (ffprobe) {
       try {
-        const { stdout } = await execAsync(
-          `"${ffprobe}" -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${filePath}"`,
-        );
+        const { stdout } = await execFileAsync(ffprobe, [
+          "-v",
+          "error",
+          "-show_entries",
+          "format=duration",
+          "-of",
+          "default=noprint_wrappers=1:nokey=1",
+          filePath,
+        ]);
         const seconds = Number.parseFloat(stdout.trim());
         if (!Number.isNaN(seconds)) {
           duration = formatDuration(seconds);
@@ -210,7 +250,7 @@ export async function getFileInfo(filePath: string): Promise<FileInfo> {
     // Try afinfo as fallback if ffprobe didn't work (works for many audio formats on macOS)
     if (!duration) {
       try {
-        const { stdout } = await execAsync(`afinfo "${filePath}"`);
+        const { stdout } = await execFileAsync("afinfo", [filePath]);
         const match = stdout.match(/estimated duration:\s*([\d.]+)\s*sec/);
         if (match) {
           const seconds = Number.parseFloat(match[1]);
@@ -226,7 +266,7 @@ export async function getFileInfo(filePath: string): Promise<FileInfo> {
     // Try mdls as another fallback if afinfo didn't work
     if (!duration) {
       try {
-        const { stdout } = await execAsync(`mdls -name kMDItemDurationSeconds "${filePath}"`);
+        const { stdout } = await execFileAsync("mdls", ["-name", "kMDItemDurationSeconds", filePath]);
         const match = stdout.match(/kMDItemDurationSeconds\s*=\s*([\d.]+)/);
         if (match) {
           const seconds = Number.parseFloat(match[1]);
