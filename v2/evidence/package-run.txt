@@ -1,0 +1,2 @@
+PASS full schema, 38 negative cases passed
+PASS deterministic closed ARM64 archive and extracted production commands; SHA256 2a46f4b347b68d9840a4a12b333546ff7bf390b53b24ab50e3120332be23a0b0

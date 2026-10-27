@@ -1,0 +1,26 @@
+PASS view-fields-copy-reveal-openwith-strict-acks-stale-input
+PASS real-sdk-effect-cancel-and-frozen-retry
+PASS real-sdk-140-canceled-opens-without-dispose
+jpg Partially completed: Cleared 0, Partial 1, Failed 0
+png Partially completed: Cleared 0, Partial 1, Failed 0
+gif Partially completed: Cleared 0, Partial 1, Failed 0
+webp Partially completed: Cleared 0, Partial 1, Failed 0
+tiff Partially completed: Cleared 0, Partial 1, Failed 0
+wav Failed: Cleared 0, Partial 0, Failed 1
+flac Failed: Cleared 0, Partial 0, Failed 1
+mp3 Failed: Cleared 0, Partial 0, Failed 1
+mp4 Partially completed: Cleared 0, Partial 1, Failed 0
+mov Partially completed: Cleared 0, Partial 1, Failed 0
+m4a Partially completed: Cleared 0, Partial 1, Failed 0
+pdf Partially completed: Cleared 0, Partial 1, Failed 0
+PASS authentic-exiftool-twelve-containers-payload-xattrs-atomicity
+PASS batch-partials-malformed-unsupported-hardlink-symlink-readonly
+PASS frozen-plan-identity-race
+PASS authentic-native-ffprobe-inspection-and-playlist-denial
+PASS real-sdk-capacity-and-selection-contract
+PASS partial-batch-cancel-with-immediate-checkpoint
+PASS directory-first-selection-stat-folder-all-actions-clear-denial
+PASS generic-authentic-exiftool-xmp-raster-heif-avif-subifd-fragmented
+PASS authentic-writer-warning-fresh-fallback-failure-candidate-bounds
+PASS real-sdk-16-mib-frame-boundary
+PASS all 13 process cases

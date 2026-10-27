@@ -1,0 +1,28 @@
+{
+  "id": "raycast.file-info",
+  "name": "File Info",
+  "description": "Quickly view or strip metadata (EXIF, GPS, IPTC, etc.) from selected files for privacy and cleaner sharing. Works on macOS and Windows.",
+  "author": "almatkai",
+  "owner": "almatkai",
+  "version": "0.1.0",
+  "repository": "https://github.com/almatkai/file-info",
+  "iconUrl": "https://raw.githubusercontent.com/almatkai/file-info/main/assets/extension-icon.png",
+  "categories": [
+    "Productivity",
+    "Developer Tools",
+    "System"
+  ],
+  "commands": [
+    {
+      "name": "show-file-info",
+      "title": "Show File Info",
+      "description": "Display metadata of the currently selected file"
+    },
+    {
+      "name": "clear-file-metadata",
+      "title": "Clear File Metadata",
+      "description": "Strip all embedded metadata (EXIF, GPS, IPTC, XMP, etc.) and system attributes from selected files."
+    }
+  ],
+  "runtime": "javascript"
+}

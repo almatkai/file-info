@@ -1,0 +1,9 @@
+{
+  "hostPin": "ea100cee3f69711de12485ba061950c5fc65258f",
+  "sourceSha256": "daf45815d76762323c6c1320c88ed24dfe28160a60bb4974b8073e3f17a3b982",
+  "patchSha256": "4b89776420551323bf5eb59b4b0a71ff6ff74ad501b905a53efd2053e76fdd51",
+  "extractedFixtureSha256": "670d10d2ee9c851bca37a45fefee10e45a75c605b078d0edeb30df93505d0140",
+  "appliedTo": "ignored .qa/host-patch copy ONLY",
+  "hostWorkingTreeEdited": false,
+  "check": "passed"
+}

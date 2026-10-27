@@ -1,0 +1,2 @@
+    Checking tezbar-file-info v2.0.0 (/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.33s

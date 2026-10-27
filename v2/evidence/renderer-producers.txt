@@ -1,0 +1,2 @@
+PASS pinned renderer, metadata, local filter and original/patched Finder scripts; OS services inert
+PASS exact pinned action callback error/unknown-outcome pipeline

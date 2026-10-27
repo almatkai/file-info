@@ -1,0 +1,44 @@
+{
+  "state": "passed",
+  "productionSourceSha256": "79ff60bf88368f0c3b8b67dcdcefa00c0aa51b434c681cef4a8a6943f5420b87",
+  "initialCargoHome": "empty",
+  "initialTarget": "empty",
+  "cargoHome": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/fresh-cargo-de133b7e-0441-4e1a-b916-92464f24269d",
+  "targetDir": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/fresh-target-de133b7e-0441-4e1a-b916-92464f24269d",
+  "sdkSource": "git+https://github.com/almatkai/tezbar-extension-sdk-rust?rev=e955911f0bf5b558f9d3eb5183df0adc95c22af2",
+  "sdkHead": "e955911f0bf5b558f9d3eb5183df0adc95c22af2",
+  "sdkFilesMatched": [
+    "SDK_API.md",
+    "PROTOCOL.md",
+    "HOST_INTEGRATION.md",
+    "src/runner.rs",
+    "src/context.rs",
+    "src/stdio.rs",
+    "src/lib.rs",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "lockSha256": "7a4e4630e704c7cc5ee1130987c887c3d78845ec7ea7bae49d8b8500a0b8392e",
+  "binary": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/fresh-target-de133b7e-0441-4e1a-b916-92464f24269d/aarch64-apple-darwin/release/tezbar-file-info",
+  "binarySha256": "f19783bfbb65717eb609e0cc90b7a719b169ea3b4e0f642358ce141df6642789",
+  "protocolInfo": {
+    "commands": [
+      "show-file-info",
+      "clear-file-metadata"
+    ],
+    "id": "com.tezbar.native.file-info",
+    "protocol": 1,
+    "sdkVersion": "0.1.1",
+    "version": "2.0.0"
+  },
+  "selfTest": {
+    "commands": [
+      "show-file-info",
+      "clear-file-metadata"
+    ],
+    "id": "com.tezbar.native.file-info",
+    "protocol": 1,
+    "sdkVersion": "0.1.1",
+    "version": "2.0.0"
+  }
+}

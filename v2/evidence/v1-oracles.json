@@ -1,0 +1,969 @@
+{
+  "closedVM": true,
+  "cases": [
+    {
+      "name": "actual-show-tsx-and-helper",
+      "selectionReads": 1,
+      "labels": 17,
+      "copyActions": 2
+    },
+    {
+      "name": "actual-clear-tsx",
+      "platform": "darwin",
+      "options": {},
+      "confirmationCount": 1,
+      "calls": [
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/local/bin/exiftool"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-c",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.metadata:kMDItemFinderComment",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.quarantine",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.FinderInfo",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.ResourceFork",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "rm",
+          "args": [
+            "-f",
+            "$QA/oracle/owned.png/..namedfork/rsrc"
+          ]
+        },
+        {
+          "file": "chown",
+          "args": [
+            "qa-owner",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "/usr/local/bin/exiftool",
+          "args": [
+            "-all=",
+            "-EXIF:all=",
+            "-GPS:all=",
+            "-IPTC:all=",
+            "-XMP:all=",
+            "-ICC_Profile:all=",
+            "-ThumbnailImage=",
+            "-PreviewImage=",
+            "-Comment=",
+            "-MakerNotes=",
+            "-UserComment=",
+            "-PDF:all=",
+            "-ID3:all=",
+            "-QuickTime:all=",
+            "-overwrite_original",
+            "-q",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "utimes",
+          "args": [
+            "$QA/oracle/owned.png",
+            "now",
+            "now"
+          ]
+        }
+      ],
+      "lastToast": {
+        "style": "success",
+        "title": "Metadata cleared",
+        "message": "Successfully cleared 1 file"
+      }
+    },
+    {
+      "name": "actual-clear-tsx",
+      "platform": "darwin",
+      "options": {
+        "fallback": true
+      },
+      "confirmationCount": 1,
+      "calls": [
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/local/bin/exiftool"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-c",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.metadata:kMDItemFinderComment",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.quarantine",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.FinderInfo",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.ResourceFork",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "rm",
+          "args": [
+            "-f",
+            "$QA/oracle/owned.png/..namedfork/rsrc"
+          ]
+        },
+        {
+          "file": "chown",
+          "args": [
+            "qa-owner",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "/usr/local/bin/exiftool",
+          "args": [
+            "-all=",
+            "-EXIF:all=",
+            "-GPS:all=",
+            "-IPTC:all=",
+            "-XMP:all=",
+            "-ICC_Profile:all=",
+            "-ThumbnailImage=",
+            "-PreviewImage=",
+            "-Comment=",
+            "-MakerNotes=",
+            "-UserComment=",
+            "-PDF:all=",
+            "-ID3:all=",
+            "-QuickTime:all=",
+            "-overwrite_original",
+            "-q",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "/usr/local/bin/exiftool",
+          "args": [
+            "-all=",
+            "-overwrite_original",
+            "-q",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "utimes",
+          "args": [
+            "$QA/oracle/owned.png",
+            "now",
+            "now"
+          ]
+        }
+      ],
+      "lastToast": {
+        "style": "success",
+        "title": "Metadata cleared",
+        "message": "Successfully cleared 1 file"
+      }
+    },
+    {
+      "name": "actual-clear-tsx",
+      "platform": "darwin",
+      "options": {
+        "failAll": true
+      },
+      "confirmationCount": 1,
+      "calls": [
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/local/bin/exiftool"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-c",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.metadata:kMDItemFinderComment",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.quarantine",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.FinderInfo",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.ResourceFork",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "rm",
+          "args": [
+            "-f",
+            "$QA/oracle/owned.png/..namedfork/rsrc"
+          ]
+        },
+        {
+          "file": "chown",
+          "args": [
+            "qa-owner",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "/usr/local/bin/exiftool",
+          "args": [
+            "-all=",
+            "-EXIF:all=",
+            "-GPS:all=",
+            "-IPTC:all=",
+            "-XMP:all=",
+            "-ICC_Profile:all=",
+            "-ThumbnailImage=",
+            "-PreviewImage=",
+            "-Comment=",
+            "-MakerNotes=",
+            "-UserComment=",
+            "-PDF:all=",
+            "-ID3:all=",
+            "-QuickTime:all=",
+            "-overwrite_original",
+            "-q",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "/usr/local/bin/exiftool",
+          "args": [
+            "-all=",
+            "-overwrite_original",
+            "-q",
+            "$QA/oracle/owned.png"
+          ]
+        }
+      ],
+      "lastToast": {
+        "style": "failure",
+        "title": "Failed",
+        "message": "Cleared 0, Failed 1"
+      }
+    },
+    {
+      "name": "actual-clear-tsx",
+      "platform": "darwin",
+      "options": {
+        "systemFails": true
+      },
+      "confirmationCount": 1,
+      "calls": [
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/local/bin/exiftool"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-c",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.metadata:kMDItemFinderComment",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.quarantine",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.FinderInfo",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "xattr",
+          "args": [
+            "-d",
+            "com.apple.ResourceFork",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "rm",
+          "args": [
+            "-f",
+            "$QA/oracle/owned.png/..namedfork/rsrc"
+          ]
+        },
+        {
+          "file": "chown",
+          "args": [
+            "qa-owner",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "/usr/local/bin/exiftool",
+          "args": [
+            "-all=",
+            "-EXIF:all=",
+            "-GPS:all=",
+            "-IPTC:all=",
+            "-XMP:all=",
+            "-ICC_Profile:all=",
+            "-ThumbnailImage=",
+            "-PreviewImage=",
+            "-Comment=",
+            "-MakerNotes=",
+            "-UserComment=",
+            "-PDF:all=",
+            "-ID3:all=",
+            "-QuickTime:all=",
+            "-overwrite_original",
+            "-q",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "utimes",
+          "args": [
+            "$QA/oracle/owned.png",
+            "now",
+            "now"
+          ]
+        }
+      ],
+      "lastToast": {
+        "style": "success",
+        "title": "Metadata cleared",
+        "message": "Successfully cleared 1 file"
+      }
+    },
+    {
+      "name": "actual-clear-tsx",
+      "platform": "darwin",
+      "options": {
+        "empty": true
+      },
+      "confirmationCount": 0,
+      "calls": [],
+      "lastToast": {
+        "style": "failure",
+        "title": "No files selected",
+        "message": "Select a file in Finder to clear metadata"
+      }
+    },
+    {
+      "name": "actual-clear-tsx",
+      "platform": "darwin",
+      "options": {
+        "cancel": true
+      },
+      "confirmationCount": 1,
+      "calls": [
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/local/bin/exiftool"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "actual-clear-tsx",
+      "platform": "win32",
+      "options": {},
+      "confirmationCount": 1,
+      "calls": [
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/local/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "/opt/homebrew/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "C:\\Program Files\\ExifTool\\exiftool.exe"
+          ]
+        },
+        {
+          "file": "powershell",
+          "args": [
+            "-NoProfile",
+            "-Command",
+            "Clear-ItemProperty",
+            "-LiteralPath",
+            "$QA/oracle/owned.png",
+            "-Name",
+            "*",
+            "-ErrorAction",
+            "SilentlyContinue"
+          ]
+        },
+        {
+          "file": "takeown",
+          "args": [
+            "/F",
+            "$QA/oracle/owned.png",
+            "/A"
+          ]
+        },
+        {
+          "file": "icacls",
+          "args": [
+            "$QA/oracle/owned.png",
+            "/setowner",
+            "qa-owner",
+            "/T"
+          ]
+        },
+        {
+          "file": "C:\\Program Files\\ExifTool\\exiftool.exe",
+          "args": [
+            "-all=",
+            "-EXIF:all=",
+            "-GPS:all=",
+            "-IPTC:all=",
+            "-XMP:all=",
+            "-ICC_Profile:all=",
+            "-ThumbnailImage=",
+            "-PreviewImage=",
+            "-Comment=",
+            "-MakerNotes=",
+            "-UserComment=",
+            "-PDF:all=",
+            "-ID3:all=",
+            "-QuickTime:all=",
+            "-overwrite_original",
+            "-q",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "utimes",
+          "args": [
+            "$QA/oracle/owned.png",
+            "now",
+            "now"
+          ]
+        }
+      ],
+      "lastToast": {
+        "style": "success",
+        "title": "Metadata cleared",
+        "message": "Successfully cleared 1 file"
+      }
+    },
+    {
+      "name": "actual-clear-tsx",
+      "platform": "win32",
+      "options": {
+        "fallback": true
+      },
+      "confirmationCount": 1,
+      "calls": [
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/local/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "/opt/homebrew/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "C:\\Program Files\\ExifTool\\exiftool.exe"
+          ]
+        },
+        {
+          "file": "powershell",
+          "args": [
+            "-NoProfile",
+            "-Command",
+            "Clear-ItemProperty",
+            "-LiteralPath",
+            "$QA/oracle/owned.png",
+            "-Name",
+            "*",
+            "-ErrorAction",
+            "SilentlyContinue"
+          ]
+        },
+        {
+          "file": "takeown",
+          "args": [
+            "/F",
+            "$QA/oracle/owned.png",
+            "/A"
+          ]
+        },
+        {
+          "file": "icacls",
+          "args": [
+            "$QA/oracle/owned.png",
+            "/setowner",
+            "qa-owner",
+            "/T"
+          ]
+        },
+        {
+          "file": "C:\\Program Files\\ExifTool\\exiftool.exe",
+          "args": [
+            "-all=",
+            "-EXIF:all=",
+            "-GPS:all=",
+            "-IPTC:all=",
+            "-XMP:all=",
+            "-ICC_Profile:all=",
+            "-ThumbnailImage=",
+            "-PreviewImage=",
+            "-Comment=",
+            "-MakerNotes=",
+            "-UserComment=",
+            "-PDF:all=",
+            "-ID3:all=",
+            "-QuickTime:all=",
+            "-overwrite_original",
+            "-q",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "C:\\Program Files\\ExifTool\\exiftool.exe",
+          "args": [
+            "-all=",
+            "-overwrite_original",
+            "-q",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "utimes",
+          "args": [
+            "$QA/oracle/owned.png",
+            "now",
+            "now"
+          ]
+        }
+      ],
+      "lastToast": {
+        "style": "success",
+        "title": "Metadata cleared",
+        "message": "Successfully cleared 1 file"
+      }
+    },
+    {
+      "name": "actual-clear-tsx",
+      "platform": "win32",
+      "options": {
+        "failAll": true
+      },
+      "confirmationCount": 1,
+      "calls": [
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/local/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "/opt/homebrew/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "C:\\Program Files\\ExifTool\\exiftool.exe"
+          ]
+        },
+        {
+          "file": "powershell",
+          "args": [
+            "-NoProfile",
+            "-Command",
+            "Clear-ItemProperty",
+            "-LiteralPath",
+            "$QA/oracle/owned.png",
+            "-Name",
+            "*",
+            "-ErrorAction",
+            "SilentlyContinue"
+          ]
+        },
+        {
+          "file": "takeown",
+          "args": [
+            "/F",
+            "$QA/oracle/owned.png",
+            "/A"
+          ]
+        },
+        {
+          "file": "icacls",
+          "args": [
+            "$QA/oracle/owned.png",
+            "/setowner",
+            "qa-owner",
+            "/T"
+          ]
+        },
+        {
+          "file": "C:\\Program Files\\ExifTool\\exiftool.exe",
+          "args": [
+            "-all=",
+            "-EXIF:all=",
+            "-GPS:all=",
+            "-IPTC:all=",
+            "-XMP:all=",
+            "-ICC_Profile:all=",
+            "-ThumbnailImage=",
+            "-PreviewImage=",
+            "-Comment=",
+            "-MakerNotes=",
+            "-UserComment=",
+            "-PDF:all=",
+            "-ID3:all=",
+            "-QuickTime:all=",
+            "-overwrite_original",
+            "-q",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "C:\\Program Files\\ExifTool\\exiftool.exe",
+          "args": [
+            "-all=",
+            "-overwrite_original",
+            "-q",
+            "$QA/oracle/owned.png"
+          ]
+        }
+      ],
+      "lastToast": {
+        "style": "failure",
+        "title": "Failed",
+        "message": "Cleared 0, Failed 1"
+      }
+    },
+    {
+      "name": "actual-clear-tsx",
+      "platform": "win32",
+      "options": {
+        "systemFails": true
+      },
+      "confirmationCount": 1,
+      "calls": [
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/local/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "/opt/homebrew/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "C:\\Program Files\\ExifTool\\exiftool.exe"
+          ]
+        },
+        {
+          "file": "powershell",
+          "args": [
+            "-NoProfile",
+            "-Command",
+            "Clear-ItemProperty",
+            "-LiteralPath",
+            "$QA/oracle/owned.png",
+            "-Name",
+            "*",
+            "-ErrorAction",
+            "SilentlyContinue"
+          ]
+        },
+        {
+          "file": "takeown",
+          "args": [
+            "/F",
+            "$QA/oracle/owned.png",
+            "/A"
+          ]
+        },
+        {
+          "file": "C:\\Program Files\\ExifTool\\exiftool.exe",
+          "args": [
+            "-all=",
+            "-EXIF:all=",
+            "-GPS:all=",
+            "-IPTC:all=",
+            "-XMP:all=",
+            "-ICC_Profile:all=",
+            "-ThumbnailImage=",
+            "-PreviewImage=",
+            "-Comment=",
+            "-MakerNotes=",
+            "-UserComment=",
+            "-PDF:all=",
+            "-ID3:all=",
+            "-QuickTime:all=",
+            "-overwrite_original",
+            "-q",
+            "$QA/oracle/owned.png"
+          ]
+        },
+        {
+          "file": "utimes",
+          "args": [
+            "$QA/oracle/owned.png",
+            "now",
+            "now"
+          ]
+        }
+      ],
+      "lastToast": {
+        "style": "success",
+        "title": "Metadata cleared",
+        "message": "Successfully cleared 1 file"
+      }
+    },
+    {
+      "name": "actual-clear-tsx",
+      "platform": "win32",
+      "options": {
+        "empty": true
+      },
+      "confirmationCount": 0,
+      "calls": [],
+      "lastToast": {
+        "style": "failure",
+        "title": "No files selected",
+        "message": "Select a file in Finder to clear metadata"
+      }
+    },
+    {
+      "name": "actual-clear-tsx",
+      "platform": "win32",
+      "options": {
+        "cancel": true
+      },
+      "confirmationCount": 1,
+      "calls": [
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/local/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "/opt/homebrew/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "/usr/bin/exiftool"
+          ]
+        },
+        {
+          "file": "existsSync",
+          "args": [
+            "C:\\Program Files\\ExifTool\\exiftool.exe"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "actual-v1-directory-view",
+      "suffix": "empty",
+      "selectionReads": 1,
+      "type": "Directory",
+      "icon": "Folder"
+    },
+    {
+      "name": "actual-v1-directory-view",
+      "suffix": "nonempty.png",
+      "selectionReads": 1,
+      "type": "Directory",
+      "icon": "Folder"
+    },
+    {
+      "name": "actual-v1-generic-clear-path-and-successful-stderr",
+      "format": "xmp",
+      "detailedAttempts": 1,
+      "success": true,
+      "selectedPathPassedDirectly": true
+    },
+    {
+      "name": "actual-v1-generic-clear-path-and-successful-stderr",
+      "format": "heic",
+      "detailedAttempts": 1,
+      "success": true,
+      "selectedPathPassedDirectly": true
+    },
+    {
+      "name": "actual-v1-generic-clear-path-and-successful-stderr",
+      "format": "avif",
+      "detailedAttempts": 1,
+      "success": true,
+      "selectedPathPassedDirectly": true
+    },
+    {
+      "name": "actual-v1-generic-clear-path-and-successful-stderr",
+      "format": "psd",
+      "detailedAttempts": 1,
+      "success": true,
+      "selectedPathPassedDirectly": true
+    },
+    {
+      "name": "actual-v1-generic-clear-path-and-successful-stderr",
+      "format": "jp2",
+      "detailedAttempts": 1,
+      "success": true,
+      "selectedPathPassedDirectly": true
+    },
+    {
+      "name": "actual-v1-generic-clear-path-and-successful-stderr",
+      "format": "tiff",
+      "detailedAttempts": 1,
+      "success": true,
+      "selectedPathPassedDirectly": true
+    }
+  ],
+  "caseCount": 21
+}

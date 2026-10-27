@@ -1,0 +1,532 @@
+{
+  "binary": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/target/debug/tezbar-file-info",
+  "cases": [
+    {
+      "name": "view-fields-copy-reveal-openwith-strict-acks-stale-input",
+      "state": "passed",
+      "seconds": 0.056,
+      "detail": {
+        "labels": [
+          "General Information",
+          "Name",
+          "Type",
+          "Size",
+          "Extension",
+          "MIME Type",
+          "Location",
+          "Path",
+          "Timestamps",
+          "Created",
+          "Modified",
+          "Accessed",
+          "Permissions",
+          "Mode",
+          "Owner",
+          "Group"
+        ],
+        "hostCalls": 17,
+        "strictAckNegatives": 8,
+        "selectionReads": 2
+      }
+    },
+    {
+      "name": "real-sdk-effect-cancel-and-frozen-retry",
+      "state": "passed",
+      "seconds": 0.021,
+      "detail": "cancelled effect retained frozen payload; late ACK inert; explicit retry only"
+    },
+    {
+      "name": "real-sdk-140-canceled-opens-without-dispose",
+      "state": "passed",
+      "seconds": 0.04,
+      "detail": {
+        "canceledOpens": 140,
+        "newSession": "accepted"
+      }
+    },
+    {
+      "name": "authentic-exiftool-twelve-containers-payload-xattrs-atomicity",
+      "state": "passed",
+      "seconds": 4.824,
+      "detail": [
+        {
+          "format": "jpg",
+          "bytesBefore": 3726,
+          "bytesAfter": 696,
+          "decodedPayloadParity": true,
+          "xattrsAfter": 1,
+          "sha256After": "6bb3345efae1138a050974409f2d8486a0cb06d4947a8248e1c31907e7b1a659"
+        },
+        {
+          "format": "png",
+          "bytesBefore": 555,
+          "bytesAfter": 75,
+          "decodedPayloadParity": true,
+          "xattrsAfter": 1,
+          "sha256After": "e6d66889131220f931fddfb05730d647a0992456c63ae0a8154b4ae32ff219ef"
+        },
+        {
+          "format": "gif",
+          "bytesBefore": 74,
+          "bytesAfter": 62,
+          "decodedPayloadParity": true,
+          "xattrsAfter": 1,
+          "sha256After": "773f0af735817e3e97f702fcdc8adfecfc012ca5e5a54c16b412502148828fe5"
+        },
+        {
+          "format": "webp",
+          "bytesBefore": 2922,
+          "bytesAfter": 52,
+          "decodedPayloadParity": true,
+          "xattrsAfter": 1,
+          "sha256After": "dd9a5b5ba3544be20233a25d8feba5f56f1bd7803da1c682d3423cf60a140537"
+        },
+        {
+          "format": "tiff",
+          "bytesBefore": 6260,
+          "bytesAfter": 206,
+          "decodedPayloadParity": true,
+          "xattrsAfter": 1,
+          "sha256After": "e634d6b7cb2719b9195b15406a8f76586cf987d7129eee66f93172f2ce3e30d2"
+        },
+        {
+          "format": "wav",
+          "state": "explicit native-tool read-only failure; original retained"
+        },
+        {
+          "format": "flac",
+          "state": "explicit native-tool read-only failure; original retained"
+        },
+        {
+          "format": "mp3",
+          "state": "explicit native-tool read-only failure; original retained"
+        },
+        {
+          "format": "mp4",
+          "bytesBefore": 1081,
+          "bytesAfter": 952,
+          "decodedPayloadParity": true,
+          "xattrsAfter": 1,
+          "sha256After": "c60b7e6e8786b7d5c46b053c3b37cd1c8a4a5dfb7c5ed89808f632c24be4912e"
+        },
+        {
+          "format": "mov",
+          "bytesBefore": 1020,
+          "bytesAfter": 960,
+          "decodedPayloadParity": true,
+          "xattrsAfter": 1,
+          "sha256After": "c53f6d74f32d4f656b6609d6b3ac3d1853ecbbb1c12008f7414aa51708f70b97"
+        },
+        {
+          "format": "m4a",
+          "bytesBefore": 1759,
+          "bytesAfter": 1630,
+          "decodedPayloadParity": true,
+          "xattrsAfter": 1,
+          "sha256After": "bdafc5c0165e5fb59aaeaac7feeb6a2df165672aa8d74e972bb39f4a013092a5"
+        },
+        {
+          "format": "pdf",
+          "bytesBefore": 3695,
+          "bytesAfter": 740,
+          "decodedPayloadParity": true,
+          "xattrsAfter": 1,
+          "sha256After": "057c1444d951121f2b72a511f9d04641cef325f86a745fcc122d397e3252126a"
+        }
+      ]
+    },
+    {
+      "name": "batch-partials-malformed-unsupported-hardlink-symlink-readonly",
+      "state": "passed",
+      "seconds": 0.75,
+      "detail": "1 committed + 7 failed; rejected files retain exact bytes/attrs; confirmation cancellation has zero changes"
+    },
+    {
+      "name": "frozen-plan-identity-race",
+      "state": "passed",
+      "seconds": 0.055,
+      "detail": "frozen pre-confirmation identity rejects replacement; both QA files retained"
+    },
+    {
+      "name": "authentic-native-ffprobe-inspection-and-playlist-denial",
+      "state": "passed",
+      "seconds": 0.759,
+      "detail": [
+        {
+          "format": "png",
+          "dimensions": "2 \u00d7 2",
+          "duration": null
+        },
+        {
+          "format": "mp4",
+          "dimensions": "2 \u00d7 2",
+          "duration": "0:00"
+        },
+        {
+          "format": "m4a",
+          "dimensions": null,
+          "duration": "0:00"
+        }
+      ]
+    },
+    {
+      "name": "real-sdk-capacity-and-selection-contract",
+      "state": "passed",
+      "seconds": 1.166,
+      "detail": {
+        "capacity": 128,
+        "overflow": "rejected",
+        "afterDisposal": "recovered",
+        "badSelectionCases": 4
+      }
+    },
+    {
+      "name": "partial-batch-cancel-with-immediate-checkpoint",
+      "state": "passed",
+      "seconds": 0.877,
+      "detail": "first committed, second unchanged; cancelled opening cannot re-read/replay same identity; no automatic retry"
+    },
+    {
+      "name": "directory-first-selection-stat-folder-all-actions-clear-denial",
+      "state": "passed",
+      "seconds": 0.112,
+      "detail": [
+        {
+          "directory": "empty",
+          "firstOfMultiple": true,
+          "allFourActions": "owned host ACKs",
+          "clear": "rejected",
+          "children": "untouched"
+        },
+        {
+          "directory": "nonempty",
+          "firstOfMultiple": true,
+          "allFourActions": "owned host ACKs",
+          "clear": "rejected",
+          "children": "untouched"
+        }
+      ]
+    },
+    {
+      "name": "generic-authentic-exiftool-xmp-raster-heif-avif-subifd-fragmented",
+      "state": "passed",
+      "seconds": 3.936,
+      "detail": [
+        {
+          "fixture": "own.avif",
+          "nativeAttempts": [
+            {
+              "attempt": 0,
+              "exitCode": 0,
+              "stderr": "Warning: Not a deletable group: ID3\n"
+            }
+          ],
+          "production": {
+            "committed": true,
+            "detail": "Replacement committed. Embedded metadata processed; 2 original xattr names observed; original attribute streams not copied to fresh inode. Actual remaining xattrs: [com.apple.provenance]. Attribute removal errors: []. Owner is current effective user; group/mode/creation time preserved; accessed/modified set to now. Directory synced. Sidecars untouched. ExifTool warning (successful exit, no fallback): Warning: Not a deletable group: ID3 Native format AVIF preserved; candidate ordinary, readable and nonempty. This layout trusts the native ExifTool writer as in V1; no independent encoded-payload proof is available. Metadata removal is limited by the native writer.",
+            "identity": {
+              "bytes": 3318,
+              "ctimeNanos": 704395900,
+              "ctimeSeconds": 1793086557,
+              "device": "16777230",
+              "inode": "55865079",
+              "links": 1,
+              "mtimeNanos": 541578609,
+              "mtimeSeconds": 1793086557
+            },
+            "path": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/runs/99ea3443-e353-4396-a8fc-57d55b3bf9d6/ccedf9da-dda9-44da-8aea-a69923ed18c5-own.avif",
+            "state": "partial"
+          },
+          "independentPayloadComparison": "FFmpeg",
+          "sha256Before": "9bef22d0f597db9ffb799d16013b449ffd54f35c20108d71264ce1e6e82abacc",
+          "sha256After": "5f8e606816ecbb3b1a3c4b73c73797f4d1fdcf2a790cbb3c47b63bfb787390d0",
+          "unselectedSidecar": "unchanged",
+          "subIfdRasterImagesCompared": null
+        },
+        {
+          "fixture": "own.bmp",
+          "nativeAttempts": [
+            {
+              "attempt": 0,
+              "exitCode": 1,
+              "stderr": "Warning: Not a deletable group: ID3\nError: Writing of BMP files is not yet supported - /Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/runs/99ea3443-e353-4396-a8fc-57d55b3bf9d6/51745b4c-e7c9-4df1-9072-21dc2aea956b-own.bmp\n"
+            },
+            {
+              "attempt": 1,
+              "exitCode": 1,
+              "stderr": "Error: Writing of BMP files is not yet supported - /Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/runs/99ea3443-e353-4396-a8fc-57d55b3bf9d6/d738d2f6-f39b-4e78-b04e-9bffea85ec8f-own.bmp\n"
+            }
+          ],
+          "production": {
+            "committed": false,
+            "error": "ExifTool detailed and fallback attempts failed; original encoded bytes/extended attributes retained (reads may advance access time): Native tool failed (exit status: 1): Warning: Not a deletable group: ID3\nError: Writing of BMP files is not yet supported - content.bmp; Native tool failed (exit status: 1): Error: Writing of BMP files is not yet supported - content.bmp",
+            "identity": {
+              "bytes": 70,
+              "ctimeNanos": 223994078,
+              "ctimeSeconds": 1793086558,
+              "device": "16777230",
+              "inode": "55865144",
+              "links": 1,
+              "mtimeNanos": 18567655,
+              "mtimeSeconds": 1793086558
+            },
+            "path": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/runs/99ea3443-e353-4396-a8fc-57d55b3bf9d6/35e51f02-060f-4a4f-9da9-bb5c4c8e5f1f-own.bmp",
+            "state": "failed"
+          },
+          "independentPayloadComparison": "FFmpeg",
+          "sha256Before": "ff816122375d8491b2610be6120265d9fed11775079ebcd41a833b9c5cbec858",
+          "sha256After": "ff816122375d8491b2610be6120265d9fed11775079ebcd41a833b9c5cbec858",
+          "unselectedSidecar": "unchanged",
+          "subIfdRasterImagesCompared": null
+        },
+        {
+          "fixture": "own.fragmented.mp4",
+          "nativeAttempts": [
+            {
+              "attempt": 0,
+              "exitCode": 1,
+              "stderr": "Warning: Not a deletable group: ID3\nError: Can't yet handle movie fragments when writing - /Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/runs/99ea3443-e353-4396-a8fc-57d55b3bf9d6/8686dc8d-858b-4dd2-aa55-f03e10440ce9-own.fragmented.mp4\n"
+            },
+            {
+              "attempt": 1,
+              "exitCode": 1,
+              "stderr": "Error: Can't yet handle movie fragments when writing - /Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/runs/99ea3443-e353-4396-a8fc-57d55b3bf9d6/fd9ec4de-331a-49be-8717-319e89f4e9a9-own.fragmented.mp4\n"
+            }
+          ],
+          "production": {
+            "committed": false,
+            "error": "ExifTool detailed and fallback attempts failed; original encoded bytes/extended attributes retained (reads may advance access time): Native tool failed (exit status: 1): Warning: Not a deletable group: ID3\nError: Can't yet handle movie fragments when writing - content.mp4; Native tool failed (exit status: 1): Error: Can't yet handle movie fragments when writing - content.mp4",
+            "identity": {
+              "bytes": 1184,
+              "ctimeNanos": 785645177,
+              "ctimeSeconds": 1793086558,
+              "device": "16777230",
+              "inode": "55865222",
+              "links": 1,
+              "mtimeNanos": 562452700,
+              "mtimeSeconds": 1793086558
+            },
+            "path": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/runs/99ea3443-e353-4396-a8fc-57d55b3bf9d6/8b55c9c8-f1f8-4088-9dd5-bbcb5f690c31-own.fragmented.mp4",
+            "state": "failed"
+          },
+          "independentPayloadComparison": "FFmpeg",
+          "sha256Before": "3c68d3aac6263fff9df20362a89086dae219840485b49143a8fa7fbffad7d499",
+          "sha256After": "3c68d3aac6263fff9df20362a89086dae219840485b49143a8fa7fbffad7d499",
+          "unselectedSidecar": "unchanged",
+          "subIfdRasterImagesCompared": null
+        },
+        {
+          "fixture": "own.heic",
+          "nativeAttempts": [
+            {
+              "attempt": 0,
+              "exitCode": 0,
+              "stderr": "Warning: Not a deletable group: ID3\n"
+            }
+          ],
+          "production": {
+            "committed": true,
+            "detail": "Replacement committed. Embedded metadata processed; 2 original xattr names observed; original attribute streams not copied to fresh inode. Actual remaining xattrs: [com.apple.provenance]. Attribute removal errors: []. Owner is current effective user; group/mode/creation time preserved; accessed/modified set to now. Directory synced. Sidecars untouched. ExifTool warning (successful exit, no fallback): Warning: Not a deletable group: ID3 Native format HEIC preserved; candidate ordinary, readable and nonempty. This layout trusts the native ExifTool writer as in V1; no independent encoded-payload proof is available. Metadata removal is limited by the native writer.",
+            "identity": {
+              "bytes": 1056,
+              "ctimeNanos": 308073446,
+              "ctimeSeconds": 1793086559,
+              "device": "16777230",
+              "inode": "55865300",
+              "links": 1,
+              "mtimeNanos": 145718531,
+              "mtimeSeconds": 1793086559
+            },
+            "path": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/runs/99ea3443-e353-4396-a8fc-57d55b3bf9d6/a671f7e0-739f-4ec2-953d-b0ea48894a6b-own.heic",
+            "state": "partial"
+          },
+          "independentPayloadComparison": "FFmpeg",
+          "sha256Before": "9d8fed5de25bf5691158b6d87b07ea36ab7ae6016fd3535a7cb7e49781cca541",
+          "sha256After": "0acdc0a817b8b6805a047d554510c525498b9deca149f9fba2f307d42a71448e",
+          "unselectedSidecar": "unchanged",
+          "subIfdRasterImagesCompared": null
+        },
+        {
+          "fixture": "own.jp2",
+          "nativeAttempts": [
+            {
+              "attempt": 0,
+              "exitCode": 0,
+              "stderr": "Warning: Not a deletable group: ID3\n"
+            }
+          ],
+          "production": {
+            "committed": true,
+            "detail": "Replacement committed. Embedded metadata processed; 2 original xattr names observed; original attribute streams not copied to fresh inode. Actual remaining xattrs: [com.apple.provenance]. Attribute removal errors: []. Owner is current effective user; group/mode/creation time preserved; accessed/modified set to now. Directory synced. Sidecars untouched. ExifTool warning (successful exit, no fallback): Warning: Not a deletable group: ID3 Native format JP2 preserved; candidate ordinary, readable and nonempty. This layout trusts the native ExifTool writer as in V1; no independent encoded-payload proof is available. Metadata removal is limited by the native writer.",
+            "identity": {
+              "bytes": 6343,
+              "ctimeNanos": 777078802,
+              "ctimeSeconds": 1793086559,
+              "device": "16777230",
+              "inode": "55865366",
+              "links": 1,
+              "mtimeNanos": 622685870,
+              "mtimeSeconds": 1793086559
+            },
+            "path": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/runs/99ea3443-e353-4396-a8fc-57d55b3bf9d6/b05cf633-f35e-446f-9ff2-9244c7d451a8-own.jp2",
+            "state": "partial"
+          },
+          "independentPayloadComparison": "FFmpeg",
+          "sha256Before": "cc60e2928748b55e6dde40658050f756e34e9b3880c2d3f6b211d26411daab22",
+          "sha256After": "81117faadf30dca40fed358ddb435ed4e9442758ab98c555aed1666875aad96b",
+          "unselectedSidecar": "unchanged",
+          "subIfdRasterImagesCompared": null
+        },
+        {
+          "fixture": "own.psd",
+          "nativeAttempts": [
+            {
+              "attempt": 0,
+              "exitCode": 0,
+              "stderr": "Warning: Not a deletable group: ID3\nWarning: ICC_Profile deleted. Image colors may be affected - /Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/runs/99ea3443-e353-4396-a8fc-57d55b3bf9d6/8f0dd7eb-ed0c-4a21-ad48-9abb9d129e0d-own.psd\n"
+            }
+          ],
+          "production": {
+            "committed": true,
+            "detail": "Replacement committed. Embedded metadata processed; 2 original xattr names observed; original attribute streams not copied to fresh inode. Actual remaining xattrs: [com.apple.provenance]. Attribute removal errors: []. Owner is current effective user; group/mode/creation time preserved; accessed/modified set to now. Directory synced. Sidecars untouched. ExifTool warning (successful exit, no fallback): Warning: Not a deletable group: ID3\nWarning: ICC_Profile deleted. Image colors may be affected - content.psd Native format PSD preserved; candidate ordinary, readable and nonempty. This layout trusts the native ExifTool writer as in V1; no independent encoded-payload proof is available. Metadata removal is limited by the native writer.",
+            "identity": {
+              "bytes": 3900,
+              "ctimeNanos": 245091863,
+              "ctimeSeconds": 1793086560,
+              "device": "16777230",
+              "inode": "55865428",
+              "links": 1,
+              "mtimeNanos": 85531415,
+              "mtimeSeconds": 1793086560
+            },
+            "path": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/runs/99ea3443-e353-4396-a8fc-57d55b3bf9d6/d98f4663-44d3-4b0e-8481-b2389971cad3-own.psd",
+            "state": "partial"
+          },
+          "independentPayloadComparison": "FFmpeg",
+          "sha256Before": "c82cf2d68389cbae56356a4505c55f0fb5c86c38faf296f1b3377bc7e3da96a7",
+          "sha256After": "701f82d505a07759d97fbe271884d158af6363ad707b80c559a5d7781ead7173",
+          "unselectedSidecar": "unchanged",
+          "subIfdRasterImagesCompared": null
+        },
+        {
+          "fixture": "own.subifd.tiff",
+          "nativeAttempts": [
+            {
+              "attempt": 0,
+              "exitCode": 0,
+              "stderr": "Warning: Not a deletable group: ID3\nWarning: [minor] Can't delete IFD0 from TIFF - /Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/runs/99ea3443-e353-4396-a8fc-57d55b3bf9d6/4e6be588-ecf9-4f19-a59a-ae2afd466d87-own.subifd.tiff\n"
+            }
+          ],
+          "production": {
+            "committed": true,
+            "detail": "Replacement committed. Embedded metadata processed; 2 original xattr names observed; original attribute streams not copied to fresh inode. Actual remaining xattrs: [com.apple.provenance]. Attribute removal errors: []. Owner is current effective user; group/mode/creation time preserved; accessed/modified set to now. Directory synced. Sidecars untouched. ExifTool warning (successful exit, no fallback): Warning: Not a deletable group: ID3\nWarning: [minor] Can't delete IFD0 from TIFF - content.tiff Native format TIF preserved; candidate ordinary, readable and nonempty. This layout trusts the native ExifTool writer as in V1; no independent encoded-payload proof is available. Metadata removal is limited by the native writer.",
+            "identity": {
+              "bytes": 3154,
+              "ctimeNanos": 713135800,
+              "ctimeSeconds": 1793086560,
+              "device": "16777230",
+              "inode": "55865490",
+              "links": 1,
+              "mtimeNanos": 551566262,
+              "mtimeSeconds": 1793086560
+            },
+            "path": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/runs/99ea3443-e353-4396-a8fc-57d55b3bf9d6/a794fb73-a906-4678-959b-fd06c3ed4cbd-own.subifd.tiff",
+            "state": "partial"
+          },
+          "independentPayloadComparison": "FFmpeg",
+          "sha256Before": "213ab1dd4cae76b8db5add45af69bf150f338f840cf26630f1c8c401d2b21c52",
+          "sha256After": "a738f0116cd6a573516d5623718db16f11b0f53b87f88feedfad8ac97744444d",
+          "unselectedSidecar": "unchanged",
+          "subIfdRasterImagesCompared": 2
+        },
+        {
+          "fixture": "own.xmp",
+          "nativeAttempts": [
+            {
+              "attempt": 0,
+              "exitCode": 0,
+              "stderr": "Warning: Not a deletable group: ID3\n"
+            }
+          ],
+          "production": {
+            "committed": true,
+            "detail": "Replacement committed. Embedded metadata processed; 2 original xattr names observed; original attribute streams not copied to fresh inode. Actual remaining xattrs: [com.apple.provenance]. Attribute removal errors: []. Owner is current effective user; group/mode/creation time preserved; accessed/modified set to now. Directory synced. Sidecars untouched. ExifTool warning (successful exit, no fallback): Warning: Not a deletable group: ID3 Native format XMP preserved; candidate ordinary, readable and nonempty. This layout trusts the native ExifTool writer as in V1; no independent encoded-payload proof is available. Metadata removal is limited by the native writer.",
+            "identity": {
+              "bytes": 396,
+              "ctimeNanos": 158957417,
+              "ctimeSeconds": 1793086561,
+              "device": "16777230",
+              "inode": "55865553",
+              "links": 1,
+              "mtimeNanos": 19082196,
+              "mtimeSeconds": 1793086561
+            },
+            "path": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/runs/99ea3443-e353-4396-a8fc-57d55b3bf9d6/7591b88c-9915-448b-9eaa-2410d7993cbd-own.xmp",
+            "state": "partial"
+          },
+          "independentPayloadComparison": "XMP metadata-only: native parse + private value removed; no pixel payload",
+          "sha256Before": "8ae3a70ee120f75eb605c103d10be73f517f3a52789b657beca8b79c172f7da4",
+          "sha256After": "77a6dc10a3c2f78dddc735533cf8992a7d052f7a790ad782da4272851ac2c816",
+          "unselectedSidecar": "unchanged",
+          "subIfdRasterImagesCompared": null
+        }
+      ]
+    },
+    {
+      "name": "authentic-writer-warning-fresh-fallback-failure-candidate-bounds",
+      "state": "passed",
+      "seconds": 6.182,
+      "detail": [
+        {
+          "mode": "warning",
+          "state": "partial",
+          "nativeWriterAttempts": 1,
+          "error": null
+        },
+        {
+          "mode": "fallback",
+          "state": "partial",
+          "nativeWriterAttempts": 2,
+          "error": null
+        },
+        {
+          "mode": "failure",
+          "state": "failed",
+          "nativeWriterAttempts": 2,
+          "error": "ExifTool detailed and fallback attempts failed; original encoded bytes/extended attributes retained (reads may advance access time): Native tool failed (exit status: 1): owned writer failed; Native tool failed (exit status: 1): owned writer failed"
+        },
+        {
+          "mode": "empty",
+          "state": "failed",
+          "nativeWriterAttempts": 1,
+          "error": "Metadata tool produced a non-ordinary or oversized file"
+        },
+        {
+          "mode": "symlink",
+          "state": "failed",
+          "nativeWriterAttempts": 1,
+          "error": "Too many levels of symbolic links (os error 62)"
+        },
+        {
+          "mode": "wrong-format",
+          "state": "failed",
+          "nativeWriterAttempts": 1,
+          "error": "Metadata tool changed the native file format; original retained"
+        },
+        {
+          "mode": "flood",
+          "state": "failed",
+          "nativeWriterAttempts": 2,
+          "error": "ExifTool detailed and fallback attempts failed; original encoded bytes/extended attributes retained (reads may advance access time): Native tool output exceeds 64 KiB; Native tool output exceeds 64 KiB"
+        }
+      ]
+    },
+    {
+      "name": "real-sdk-16-mib-frame-boundary",
+      "state": "passed",
+      "seconds": 0.055,
+      "detail": "real SDK rejects >16 MiB before JSON parse, terminates and owns EOF cleanup"
+    }
+  ],
+  "caseCount": 13
+}

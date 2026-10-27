@@ -1,0 +1,13 @@
+File Info Rust v2
+The V1 TypeScript implementation, command text and original icon are derived from
+File Info by Sandeep Baskaran and contributors, MIT license (see LICENSE).
+Own source snapshot: almatkai/file-info@0700b381975cccdfdadc2cd91c83171782875fa7.
+Upstream icon: Raycast/extensions@6734d85992290066fd31a7f5bee3cca3d3545a1a,
+extensions/file-info/assets/extension-icon.png, unchanged PNG bytes.
+
+Tezbar extension SDK 0.1.1, Apache-2.0, immutable revision
+e955911f0bf5b558f9d3eb5183df0adc95c22af2. See licenses/ for authentic grants.
+All crate notices are copied verbatim from the exact downloaded Cargo packages.
+ExifTool and optional V1 native inspection tools are not bundled. ExifTool's own
+installation/license remains the user's installed native metadata-tool contract.
+QA uses ExifTool 13.40 source downloaded into ignored .qa only, not installed.

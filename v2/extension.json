@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 3,
+  "id": "com.tezbar.native.file-info",
+  "slug": "file-info",
+  "name": "File Info",
+  "version": "2.0.0",
+  "description": "View selected-file information or remove metadata with installed ExifTool, with validated encoded content and destination-owned replacement. See README for supported formats and PDF privacy limits.",
+  "icon": "resources/extension-icon.png",
+  "author": "almatkai",
+  "runtime": "rust",
+  "execution": "process",
+  "protocolVersion": 1,
+  "repository": "https://github.com/almatkai/file-info",
+  "platforms": ["macOS", "Windows"],
+  "preferences": [],
+  "replaces": ["com.tezbar.file-info", "raycast.file-info"],
+  "capabilities": ["selection.read", "clipboard.write", "shell.reveal", "shell.openWithApp", "apps.list", "dialog.confirm"],
+  "commands": [
+    {"name": "show-file-info", "title": "Show File Info", "description": "Display metadata of the currently selected ordinary file", "mode": "view", "runtime": "rust", "platforms": ["macOS", "Windows"], "timeoutMs": 120000, "refreshMs": null, "concurrency": "reject-while-busy"},
+    {"name": "clear-file-metadata", "title": "Clear File Metadata", "description": "Remove metadata from selected ordinary files using installed ExifTool; see supported formats and PDF limits", "mode": "no-view", "runtime": "rust", "platforms": ["macOS", "Windows"], "timeoutMs": 300000, "refreshMs": null, "concurrency": "reject-while-busy"}
+  ],
+  "files": {},
+  "artifacts": {},
+  "verification": [
+    {"platform": "macOS", "state": "not-run", "note": "Owned-fixture process/engine QA is not desktop acceptance. Finder/clipboard/reveal/Open With/confirmation GUI remain untested."},
+    {"platform": "Windows", "state": "not-run", "note": "GNU cross-check is not MSVC linking or Windows desktop/native filesystem verification."}
+  ]
+}
