@@ -1,0 +1,36 @@
+
+─── src/utils.ts:77  [function]  (score 49.84)
+    getFileInfo
+
+─── src/utils.ts  (score 14.89)
+    interface FileInfo
+    function findFfprobe
+    function getFileInfo
+    function formatDuration
+    function formatBytes
+    function formatDate
+    function getFileIcon
+
+─── src/show-file-info.tsx  (score 3.27)
+    import { Action, ActionPanel, Color, getSelectedFinderItems, Icon, List, showToast, Toast } from "@raycast/api";
+    import { usePromise } from "@raycast/utils";
+    import { formatBytes, formatDate, getFileIcon, getFileInfo } from "./utils";
+    
+    export default function Command() {
+      const {
+        isLoading,
+        data: fileInfo,
+        error,
+      } = usePromise(async () => {
+        const items = await getSelectedFinderItems();
+        if (items.length === 0) {
+          throw new Error("No file selected. Please select a file in Finder first.");
+        }
+        return getFileInfo(items[0].path);
+      });
+    
+      if (error) {
+        showToas
+    … (--full 1200 to see more)
+
+3 passage(s) from 'ax-aa8d72a74701-*'. Cite ax_path:line for anything you rely on.

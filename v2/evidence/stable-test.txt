@@ -1,0 +1,45 @@
+   Compiling tezbar-file-info v2.0.0 (/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.31s
+     Running unittests src/lib.rs (.qa/gates-target-stable/debug/deps/tezbar_file_info-af0a4af0b489b420)
+
+running 12 tests
+test adapter::tests::strict_services ... ok
+test adapter::tests::selection_shape ... ok
+test format::tests::crc_and_payload ... ok
+test format::tests::rejects_forged_lengths ... ok
+test info::tests::js_formatters ... ok
+test format::tests::rejects_every_truncated_png ... ok
+test info::source_oracles::actual_v1_directory_type_icon_and_copy ... ok
+test adapter::actual_source_view::full_metadata_order_and_copy_all_match_actual_v1_tsx ... ok
+test info::source_oracles::actual_v1_format_and_native_output_coercions ... ok
+test tools::tests::source_specific_resolution_order_uses_only_owned_fake_tools ... ok
+test adapter::tests::canceled_open_capacity ... ok
+test adapter::actual_source_view::failed_open_cleanup_probe_prunes_late_cancel_without_eviction ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (.qa/gates-target-stable/debug/deps/tezbar_file_info-cb47a2343dfa3191)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/files.rs (.qa/gates-target-stable/debug/deps/files-dbf0daad390635d3)
+
+running 5 tests
+test rejects_symlink_ancestor_and_changed_identity ... ok
+test rejects_special_links_and_readonly ... ok
+test validated_candidate_replacement_is_rejected ... ok
+test destination_stage_commit_is_fenced_and_reports_real_os_attrs ... ok
+test directory_info_is_readonly_and_clear_stays_rejected ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests/host_producers.rs (.qa/gates-target-stable/debug/deps/host_producers-5f2788c53d67396c)
+
+running 2 tests
+test exact_clipboard_reveal_confirmation_producers_with_owned_effects ... ok
+test actual_native_selected_files_producer_and_unapplied_patch ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+

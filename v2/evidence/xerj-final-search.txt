@@ -1,0 +1,53 @@
+
+─── src/utils.ts:11  [interface]  (score 50.26)
+    FileInfo
+
+─── src/utils.ts  (score 16.68)
+    export function getFileIcon(fileInfo: FileInfo): Icon {
+      if (fileInfo.isDirectory) return Icon.Folder;
+    
+      const ext = fileInfo.extension.toLowerCase();
+      if ([".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg", ".webp"].includes(ext)) return Icon.Image;
+      if ([".mp4", ".mov", ".avi", ".mkv", ".webm"].includes(ext)) return Icon.Video;
+      if ([".mp3", ".wav", ".aac", ".flac", ".m4a"].includes(ext)) return Icon.Music;
+      if ([".pdf"].includes(ext)) return Icon.Document;
+      if ([".txt", ".md", ".rtf"].includes(ext)) return Icon.Text;
+      if ([".zip", ".tar", ".gz", ".rar", ".7z"].includes(ext)) return Ic
+    … (--full 1200 to see more)
+
+─── src/utils.ts:344  [function]  (score 5.27)
+    export function getFileIcon(fileInfo: FileInfo): Icon
+
+─── src/show-file-info.tsx  (score 3.93)
+    export default function Command() {
+      const {
+        isLoading,
+        data: fileInfo,
+        error,
+      } = usePromise(async () => {
+        const items = await getSelectedFinderItems();
+        if (items.length === 0) {
+          throw new Error("No file selected. Please select a file in Finder first.");
+        }
+        return getFileInfo(items[0].path);
+      });
+    
+      if (error) {
+        showToast({
+          style: Toast.Style.Failure,
+          title: "Error",
+          message: error.message,
+        });
+      }
+    
+      return (
+        <List isLoading={isLoading} isShowingDetail>
+          {fileInfo && (
+            <>
+              <List.Section title="File Overv
+    … (--full 1200 to see more)
+
+─── src/utils.ts:77  [function]  (score 3.17)
+    export async function getFileInfo(filePath: string): Promise<FileInfo>
+
+5 passage(s) from 'ax-aa8d72a74701-*'. Cite ax_path:line for anything you rely on.

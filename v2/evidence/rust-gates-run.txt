@@ -1,0 +1,9 @@
+stable-fmt passed
+stable-test passed
+stable-clippy passed
+msrv-fmt passed
+msrv-test passed
+msrv-clippy passed
+windows-gnu-check passed
+windows-gnu-clippy passed
+windows-gnu-link blocked

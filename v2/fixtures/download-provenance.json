@@ -1,0 +1,15 @@
+{
+  "upstreamIcon": {
+    "url": "https://raw.githubusercontent.com/raycast/extensions/6734d85992290066fd31a7f5bee3cca3d3545a1a/extensions/file-info/assets/extension-icon.png",
+    "sha256": "b88c6a3186889071715f11d86a69f29fd234e6fdaac0c28795570039898401e6",
+    "bytes": 69682,
+    "ownV1Sha256": "b88c6a3186889071715f11d86a69f29fd234e6fdaac0c28795570039898401e6"
+  },
+  "qaExifTool": {
+    "url": "https://codeload.github.com/exiftool/exiftool/tar.gz/refs/tags/13.40",
+    "sha256": "a650e70322cef78f5ddd7037dc5e1d372207b2c5f2b5a79500e87abb3a40499e",
+    "bytes": 8302524,
+    "version": "13.40",
+    "role": "QA only; not packaged or installed"
+  }
+}

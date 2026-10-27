@@ -1,0 +1,21 @@
+{
+  "packages": 108,
+  "grantFiles": 198,
+  "missingTexts": [],
+  "rEfi": [
+    {
+      "name": "r-efi",
+      "version": "6.0.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "declaredLicense": "MIT OR Apache-2.0 OR LGPL-2.1-or-later",
+      "grants": [
+        {
+          "file": "AUTHORS",
+          "sha256": "d027e91dbc9cdbb2f1190068e498bd6b61cff022b6a032b191021ba658d96111",
+          "bytes": 3733
+        }
+      ],
+      "missingGrantText": false
+    }
+  ]
+}

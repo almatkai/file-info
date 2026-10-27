@@ -1,0 +1,14 @@
+PASS view-fields-copy-reveal-openwith-strict-acks-stale-input
+PASS real-sdk-effect-cancel-and-frozen-retry
+Traceback (most recent call last):
+  File "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/scripts/process-qa.py", line 121, in <module>
+    check('real-sdk-140-canceled-opens-without-dispose',canceled_opens)
+  File "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/scripts/process-qa.py", line 70, in check
+    start=time.monotonic();detail=fn();RESULTS.append({'name':name,'state':'passed','seconds':round(time.monotonic()-start,3),'detail':detail});print('PASS',name,flush=True)
+  File "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/scripts/process-qa.py", line 117, in canceled_opens
+    i=h.start('session.open',{'sessionId':f'cancel-{n}','commandName':'show-file-info','preferences':{},'argumentValues':{}});call=h.read();assert call['method']=='host.selection.read';h.send({'type':'cancel','requestId':i,'reason':'owned QA'});assert 'error'in h.await_response(i)
+  File "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/scripts/process-qa.py", line 49, in await_response
+    m=self.read()
+  File "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/scripts/process-qa.py", line 25, in read
+    if not ready:raise AssertionError('protocol deadline')
+AssertionError: protocol deadline

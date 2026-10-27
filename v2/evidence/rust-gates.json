@@ -1,0 +1,146 @@
+{
+  "gates": [
+    {
+      "name": "stable-fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--check"
+      ],
+      "toolchain": "stable",
+      "exitCode": 0,
+      "required": true,
+      "state": "passed",
+      "seconds": 0.27
+    },
+    {
+      "name": "stable-test",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--all-targets"
+      ],
+      "toolchain": "stable",
+      "exitCode": 0,
+      "required": true,
+      "state": "passed",
+      "seconds": 1.92
+    },
+    {
+      "name": "stable-clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "toolchain": "stable",
+      "exitCode": 0,
+      "required": true,
+      "state": "passed",
+      "seconds": 0.47
+    },
+    {
+      "name": "msrv-fmt",
+      "command": [
+        "cargo",
+        "fmt",
+        "--check"
+      ],
+      "toolchain": "1.85.0",
+      "exitCode": 0,
+      "required": true,
+      "state": "passed",
+      "seconds": 0.2
+    },
+    {
+      "name": "msrv-test",
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--all-targets"
+      ],
+      "toolchain": "1.85.0",
+      "exitCode": 0,
+      "required": true,
+      "state": "passed",
+      "seconds": 1.49
+    },
+    {
+      "name": "msrv-clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "toolchain": "1.85.0",
+      "exitCode": 0,
+      "required": true,
+      "state": "passed",
+      "seconds": 0.5
+    },
+    {
+      "name": "windows-gnu-check",
+      "command": [
+        "cargo",
+        "check",
+        "--locked",
+        "--all-targets",
+        "--target",
+        "x86_64-pc-windows-gnu"
+      ],
+      "toolchain": "stable",
+      "exitCode": 0,
+      "required": true,
+      "state": "passed",
+      "seconds": 0.36
+    },
+    {
+      "name": "windows-gnu-clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--locked",
+        "--all-targets",
+        "--target",
+        "x86_64-pc-windows-gnu",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "toolchain": "stable",
+      "exitCode": 0,
+      "required": true,
+      "state": "passed",
+      "seconds": 0.36
+    },
+    {
+      "name": "windows-gnu-link",
+      "command": [
+        "cargo",
+        "build",
+        "--locked",
+        "--target",
+        "x86_64-pc-windows-gnu"
+      ],
+      "toolchain": "stable",
+      "exitCode": 101,
+      "required": false,
+      "state": "blocked",
+      "seconds": 0.86,
+      "reason": "Native GNU linker/import tooling unavailable; inspect exact error. Nothing installed. This does not verify MSVC or Windows execution."
+    }
+  ],
+  "passed": 8,
+  "blocked": 1,
+  "requiredFailures": 0
+}

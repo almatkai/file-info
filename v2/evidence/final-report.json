@@ -1,0 +1,51 @@
+{
+  "root": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info",
+  "branch": "feat/native-v2-rust",
+  "sourceHead": "0700b381975cccdfdadc2cd91c83171782875fa7",
+  "rustGatesPassed": 8,
+  "rustGatesBlocked": 1,
+  "rustTestCounts": {
+    "stable": 19,
+    "msrv": 19
+  },
+  "v1SourceOracleCases": 21,
+  "sdkProcessScenarios": 13,
+  "extractedProductionScenarios": 13,
+  "originalContainerVariants": 12,
+  "additionalFormatFixtures": 8,
+  "nativeSuccessfulTransformations": 15,
+  "decodedTransformationParityVariants": 14,
+  "metadataOnlyXmpTransformations": 1,
+  "originalNativeToolReadOnlyErrors": 3,
+  "additionalNativeErrors": [
+    "BMP read-only",
+    "fragmented MP4 native write error"
+  ],
+  "schemaNegativeCases": 38,
+  "cargoDependencyPackages": 108,
+  "authenticDependencyGrantFiles": 198,
+  "missingGrantTexts": [],
+  "iconSha256": "b88c6a3186889071715f11d86a69f29fd234e6fdaac0c28795570039898401e6",
+  "archiveSha256": "2a46f4b347b68d9840a4a12b333546ff7bf390b53b24ab50e3120332be23a0b0",
+  "archiveClosedMembers": 206,
+  "productionSourceSha256": "79ff60bf88368f0c3b8b67dcdcefa00c0aa51b434c681cef4a8a6943f5420b87",
+  "freshBinarySha256": "f19783bfbb65717eb609e0cc90b7a719b169ea3b4e0f642358ce141df6642789",
+  "immutablePinnedGitObjectsVerified": 35,
+  "immutablePriorFixtureGrantResourceFilesVerified": 214,
+  "originalGeneratedFixtureBytes": "unchanged",
+  "indexEmpty": true,
+  "xerjFinalIndex": "incomplete; frozen schema; no bypass/restart",
+  "desktopVerification": {
+    "macOS": "not-run",
+    "Windows": "not-run"
+  },
+  "remaining": [
+    "Native ExifTool is trusted for layouts outside finite encoded-payload witnesses; RAW/BigTIFF/JXL/further document/archive/codec variants not independently exercised",
+    "Unapplied generic bounded/complete directory-preserving selection host prerequisite",
+    "Real macOS GUI acceptance",
+    "Native Windows/MSVC/linker/filesystem/GUI QA; GNU dlltool absent",
+    "PDF metadata can remain recoverable; protected macOS xattrs can remain; warnings/limitations reported partial",
+    "POSIX final pathname fence is optimistic, not same-user atomic CAS; crash exactly-once durability not claimed"
+  ],
+  "scope": "Only own clone v2/ plus exact short root README link; no stage/commit/push/PR/install/release/deletion/subdelegation/host-or-SDK edits"
+}

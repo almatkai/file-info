@@ -1,0 +1,96 @@
+    Updating crates.io index
+    Updating git repository `https://github.com/almatkai/tezbar-extension-sdk-rust`
+ Downloading crates ...
+  Downloaded errno v0.3.14
+  Downloaded crc32fast v1.5.0
+  Downloaded version_check v0.9.5
+  Downloaded cfg-if v1.0.5
+  Downloaded crypto-common v0.1.7
+  Downloaded block-buffer v0.10.4
+  Downloaded itoa v1.0.18
+  Downloaded sha2 v0.10.9
+  Downloaded digest v0.10.7
+  Downloaded quote v1.0.47
+  Downloaded fastrand v2.5.0
+  Downloaded tokio-macros v2.6.1
+  Downloaded cpufeatures v0.2.17
+  Downloaded autocfg v1.5.1
+  Downloaded pin-project-lite v0.2.17
+  Downloaded signal-hook-registry v1.4.8
+  Downloaded once_cell v1.21.4
+  Downloaded generic-array v0.14.7
+  Downloaded unicode-ident v1.0.27
+  Downloaded ryu v1.0.23
+  Downloaded serde_derive v1.0.228
+  Downloaded tempfile v3.25.0
+  Downloaded uuid v1.23.3
+  Downloaded bitflags v2.13.2
+  Downloaded core-foundation-sys v0.8.7
+  Downloaded getrandom v0.4.3
+  Downloaded iana-time-zone v0.1.65
+  Downloaded num-traits v0.2.19
+  Downloaded proc-macro2 v1.0.107
+  Downloaded serde_core v1.0.228
+  Downloaded serde v1.0.228
+  Downloaded typenum v1.20.1
+  Downloaded bytes v1.12.1
+  Downloaded memchr v2.8.3
+  Downloaded mio v1.1.0
+  Downloaded serde_json v1.0.145
+  Downloaded chrono v0.4.42
+  Downloaded syn v2.0.119
+  Downloaded rustix v1.1.3
+  Downloaded libc v0.2.177
+  Downloaded tokio v1.48.0
+   Compiling libc v0.2.177
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling version_check v0.9.5
+   Compiling cfg-if v1.0.5
+   Compiling typenum v1.20.1
+   Compiling serde_core v1.0.228
+   Compiling getrandom v0.4.3
+   Compiling autocfg v1.5.1
+   Compiling rustix v1.1.3
+   Compiling serde_json v1.0.145
+   Compiling bitflags v2.13.2
+   Compiling ryu v1.0.23
+   Compiling pin-project-lite v0.2.17
+   Compiling crc32fast v1.5.0
+   Compiling core-foundation-sys v0.8.7
+   Compiling once_cell v1.21.4
+   Compiling generic-array v0.14.7
+   Compiling memchr v2.8.3
+   Compiling serde v1.0.228
+   Compiling itoa v1.0.18
+   Compiling fastrand v2.5.0
+   Compiling bytes v1.12.1
+   Compiling num-traits v0.2.19
+   Compiling iana-time-zone v0.1.65
+   Compiling syn v2.0.119
+   Compiling errno v0.3.14
+   Compiling mio v1.1.0
+   Compiling cpufeatures v0.2.17
+   Compiling uuid v1.23.3
+   Compiling signal-hook-registry v1.4.8
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling tokio-macros v2.6.1
+   Compiling serde_derive v1.0.228
+   Compiling digest v0.10.7
+   Compiling sha2 v0.10.9
+   Compiling tempfile v3.25.0
+   Compiling tokio v1.48.0
+   Compiling chrono v0.4.42
+   Compiling tezbar-extension-sdk v0.1.1 (https://github.com/almatkai/tezbar-extension-sdk-rust?rev=e955911f0bf5b558f9d3eb5183df0adc95c22af2#e955911f)
+   Compiling tezbar-file-info v2.0.0 (/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2)
+warning: stripping debug info with `rust-objcopy` failed: signal: 6 (SIGABRT)
+  |
+  = note: dyld[32712]: Library not loaded: @rpath/libLLVM.dylib
+            Referenced from: <AC0D75A8-23BF-301F-B7CE-3E5CC0C1BC06> /Users/almat/.rustup/toolchains/stable-aarch64-apple-darwin/lib/rustlib/aarch64-apple-darwin/bin/rust-objcopy
+            Reason: tried: '/Users/almat/.rustup/toolchains/stable-aarch64-apple-darwin/lib/rustlib/aarch64-apple-darwin/bin/../lib/libLLVM.dylib' (no such file), '/Users/almat/.rustup/toolchains/stable-aarch64-apple-darwin/lib/rustlib/aarch64-apple-darwin/bin/../lib/libLLVM.dylib' (no such file), '/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/fresh-target-de133b7e-0441-4e1a-b916-92464f24269d/release/deps/libLLVM.dylib' (no such file), '/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/home/lib/libLLVM.dylib' (no such file), '/usr/local/lib/libLLVM.dylib' (no such file), '/usr/lib/libLLVM.dylib' (no such file, not in dyld cache)
+          
+
+warning: `tezbar-file-info` (bin "tezbar-file-info") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 27.73s

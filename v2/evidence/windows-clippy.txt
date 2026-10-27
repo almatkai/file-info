@@ -1,0 +1,3 @@
+    Blocking waiting for file lock on artifact directory
+    Checking tezbar-file-info v2.0.0 (/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.29s

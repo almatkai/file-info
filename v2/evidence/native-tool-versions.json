@@ -1,0 +1,45 @@
+[
+  {
+    "command": [
+      "/usr/bin/perl",
+      "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/tools/exiftool-13.40/exiftool",
+      "-config",
+      "",
+      "-ver"
+    ],
+    "exitCode": 0,
+    "output": "13.40\n"
+  },
+  {
+    "command": [
+      "/opt/homebrew/bin/ffmpeg",
+      "-version"
+    ],
+    "exitCode": 0,
+    "output": "ffmpeg version 9.0.1 Copyright (c) 2000-2026 the FFmpeg developers\nbuilt with Apple clang version 21.0.0 (clang-2100.1.1.101)\nconfiguration: --prefix=/opt/homebrew/Cellar/ffmpeg/9.0.1_1 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvmaf --enable-libvpx --enable-libx265 --enable-openssl --enable-videotoolbox --enable-audiotoolbox --enable-neon\nlibavutil      61.  1.101 / 61.  1.101\nlibavcodec     63.  1.101 / 63.  1.101\nlibavformat    63.  1.101 / 63.  1.101\nlibavdevice    63.  1.101 / 63.  1.101\nlibavfilter    12.  1.101 / 12.  1.101\nlibswscale     10.  1.101 / 10.  1.101\nlibswresample   7.  1.101 /  7.  1.101\n\nExiting with exit code 0\n"
+  },
+  {
+    "command": [
+      "/opt/homebrew/bin/cwebp",
+      "-version"
+    ],
+    "exitCode": 0,
+    "output": "1.6.0\nlibsharpyuv: 0.4.2\n"
+  },
+  {
+    "command": [
+      "/opt/homebrew/bin/pdftoppm",
+      "-v"
+    ],
+    "exitCode": 0,
+    "output": "pdftoppm version 26.09.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC\n"
+  },
+  {
+    "command": [
+      "/usr/bin/sips",
+      "--version"
+    ],
+    "exitCode": 0,
+    "output": "sips-316\n"
+  }
+]

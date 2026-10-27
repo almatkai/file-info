@@ -6,3 +6,5 @@ Quickly view metadata of the currently selected file or clear metadata for priva
 
 - **Show File Info**: Display metadata of the currently selected file.
 - **Clear File Metadata**: Clear all metadata from selected files (EXIF, GPS, IPTC, XMP, etc.) for privacy.
+
+Standalone Rust v2: [implementation and verification](v2/README.md).

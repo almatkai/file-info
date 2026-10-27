@@ -1,0 +1,12 @@
+{
+  "prefix": "ax-aa8d72a74701",
+  "stateDir": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/xerj/ax-aa8d72a74701",
+  "exit": 1,
+  "complete": false,
+  "noServerRestart": true,
+  "noAlternatePrefix": true,
+  "noSchemaEdits": true,
+  "fallback": "exact Git objects, full sources, rg and executed checks are authoritative",
+  "searchExit": 0,
+  "reason": "Frozen dataset rejects v2/Cargo.toml: no dataset accepts family docs and fields end_line/start_line/text. Unsupported schema evolution; no bypass attempted."
+}

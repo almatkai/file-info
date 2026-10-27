@@ -1,0 +1,200 @@
+{
+  "directories": [
+    {
+      "info": {
+        "name": "empty",
+        "path": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/oracle/empty",
+        "size": 5432,
+        "type": "Directory",
+        "extension": "None",
+        "created": "2024-01-02T03:04:05.000Z",
+        "modified": "2025-06-07T13:14:15.000Z",
+        "accessed": "2025-07-08T00:01:02.000Z",
+        "permissions": "644",
+        "owner": "qa-owner",
+        "group": "qa-group",
+        "isDirectory": true,
+        "mimeType": "application/octet-stream",
+        "dimensions": "",
+        "duration": ""
+      },
+      "labels": [
+        {
+          "title": "General Information",
+          "text": ""
+        },
+        {
+          "title": "Name",
+          "text": "empty"
+        },
+        {
+          "title": "Type",
+          "text": "Directory"
+        },
+        {
+          "title": "Size",
+          "text": "5.3 KB (5,432 bytes)"
+        },
+        {
+          "title": "Extension",
+          "text": "None"
+        },
+        {
+          "title": "MIME Type",
+          "text": "application/octet-stream"
+        },
+        {
+          "title": "Location",
+          "text": ""
+        },
+        {
+          "title": "Path",
+          "text": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/oracle/empty"
+        },
+        {
+          "title": "Timestamps",
+          "text": ""
+        },
+        {
+          "title": "Created",
+          "text": "Jan 2, 2024, 03:04:05 AM"
+        },
+        {
+          "title": "Modified",
+          "text": "Jun 7, 2025, 01:14:15 PM"
+        },
+        {
+          "title": "Accessed",
+          "text": "Jul 8, 2025, 12:01:02 AM"
+        },
+        {
+          "title": "Permissions",
+          "text": ""
+        },
+        {
+          "title": "Mode",
+          "text": "644"
+        },
+        {
+          "title": "Owner",
+          "text": "qa-owner"
+        },
+        {
+          "title": "Group",
+          "text": "qa-group"
+        }
+      ],
+      "copies": [
+        {
+          "title": "Copy File Path",
+          "content": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/oracle/empty"
+        },
+        {
+          "title": "Copy All Info",
+          "content": "Name: empty\nPath: /Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/oracle/empty\nType: Directory\nSize: 5.3 KB\nExtension: None\nCreated: Jan 2, 2024, 03:04:05 AM\nModified: Jun 7, 2025, 01:14:15 PM\nAccessed: Jul 8, 2025, 12:01:02 AM\nPermissions: 644\nOwner: qa-owner\nGroup: qa-group"
+        }
+      ],
+      "icon": "Folder"
+    },
+    {
+      "info": {
+        "name": "nonempty.png",
+        "path": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/oracle/nonempty.png",
+        "size": 5432,
+        "type": "Directory",
+        "extension": ".png",
+        "created": "2024-01-02T03:04:05.000Z",
+        "modified": "2025-06-07T13:14:15.000Z",
+        "accessed": "2025-07-08T00:01:02.000Z",
+        "permissions": "644",
+        "owner": "qa-owner",
+        "group": "qa-group",
+        "isDirectory": true,
+        "mimeType": "application/octet-stream",
+        "dimensions": "2 × 2",
+        "duration": ""
+      },
+      "labels": [
+        {
+          "title": "General Information",
+          "text": ""
+        },
+        {
+          "title": "Name",
+          "text": "nonempty.png"
+        },
+        {
+          "title": "Type",
+          "text": "Directory"
+        },
+        {
+          "title": "Size",
+          "text": "5.3 KB (5,432 bytes)"
+        },
+        {
+          "title": "Extension",
+          "text": ".png"
+        },
+        {
+          "title": "MIME Type",
+          "text": "application/octet-stream"
+        },
+        {
+          "title": "Dimensions",
+          "text": "2 × 2"
+        },
+        {
+          "title": "Location",
+          "text": ""
+        },
+        {
+          "title": "Path",
+          "text": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/oracle/nonempty.png"
+        },
+        {
+          "title": "Timestamps",
+          "text": ""
+        },
+        {
+          "title": "Created",
+          "text": "Jan 2, 2024, 03:04:05 AM"
+        },
+        {
+          "title": "Modified",
+          "text": "Jun 7, 2025, 01:14:15 PM"
+        },
+        {
+          "title": "Accessed",
+          "text": "Jul 8, 2025, 12:01:02 AM"
+        },
+        {
+          "title": "Permissions",
+          "text": ""
+        },
+        {
+          "title": "Mode",
+          "text": "644"
+        },
+        {
+          "title": "Owner",
+          "text": "qa-owner"
+        },
+        {
+          "title": "Group",
+          "text": "qa-group"
+        }
+      ],
+      "copies": [
+        {
+          "title": "Copy File Path",
+          "content": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/oracle/nonempty.png"
+        },
+        {
+          "title": "Copy All Info",
+          "content": "Name: nonempty.png\nPath: /Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/oracle/nonempty.png\nType: Directory\nSize: 5.3 KB\nExtension: .png\nCreated: Jan 2, 2024, 03:04:05 AM\nModified: Jun 7, 2025, 01:14:15 PM\nAccessed: Jul 8, 2025, 12:01:02 AM\nPermissions: 644\nOwner: qa-owner\nGroup: qa-group"
+        }
+      ],
+      "icon": "Folder"
+    }
+  ]
+}

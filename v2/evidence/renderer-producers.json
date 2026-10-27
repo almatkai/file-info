@@ -1,0 +1,36 @@
+{
+  "renderer": "actual pinned ListRuntime/detail parsing functions executed in closed VM",
+  "rows": 5,
+  "metadataLabels": [
+    "General Information",
+    "Name",
+    "Type",
+    "Size",
+    "Extension",
+    "MIME Type",
+    "Location",
+    "Path",
+    "Timestamps",
+    "Created",
+    "Modified",
+    "Accessed",
+    "Permissions",
+    "Mode",
+    "Owner",
+    "Group"
+  ],
+  "clientFilter": "passed",
+  "finderProducer": {
+    "original129Selection": 128,
+    "patched129Selection": 129
+  },
+  "clipboardAck": "closed {ok:true}",
+  "revealAck": "closed {ok:true}",
+  "confirmation": "closed {response:0|1}",
+  "windowsPowerShell": "source extraction only; not executed on this macOS host",
+  "actionCallback": {
+    "expired": "no view replacement or copied notice",
+    "unknown": "actual production failure effect displayed",
+    "effects": "all host callbacks remain owned fakes"
+  }
+}

@@ -1,0 +1,12 @@
+pub mod adapter;
+pub mod format;
+pub mod info;
+pub mod secure;
+pub mod tools;
+pub use adapter::Adapter;
+pub const ID: &str = "com.tezbar.native.file-info";
+pub const MAX_FILE: u64 = 256 * 1024 * 1024;
+pub const MAX_SELECTION: usize = 128;
+pub const MAX_PATH: usize = 32 * 1024;
+pub const MAX_QUERY: usize = 4096;
+pub type Result<T> = std::result::Result<T, String>;

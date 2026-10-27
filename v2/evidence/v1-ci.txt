@@ -1,0 +1,31 @@
+npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: @types/react-dom@19.2.5
+npm error Found: @types/react@19.0.10
+npm error node_modules/@types/react
+npm error   dev @types/react@"^19.0.0" from the root project
+npm error   @types/react@"19.0.10" from @raycast/api@1.104.25
+npm error   node_modules/@raycast/api
+npm error     @raycast/api@"^1.104.1" from the root project
+npm error     peer @raycast/api@">=1.99.4" from @raycast/utils@2.3.0
+npm error     node_modules/@raycast/utils
+npm error       @raycast/utils@"^2.2.2" from the root project
+npm error
+npm error Could not resolve dependency:
+npm error peer @types/react@"^19.2.0" from @types/react-dom@19.2.5
+npm error node_modules/@types/react-dom
+npm error   dev @types/react-dom@"^19.0.0" from the root project
+npm error
+npm error Conflicting peer dependency: @types/react@19.3.0
+npm error node_modules/@types/react
+npm error   peer @types/react@"^19.2.0" from @types/react-dom@19.2.5
+npm error   node_modules/@types/react-dom
+npm error     dev @types/react-dom@"^19.0.0" from the root project
+npm error
+npm error Fix the upstream dependency conflict, or retry this command with --force or --legacy-peer-deps to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error /Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/npm/_logs/2026-10-26T20_53_44_861Z-eresolve-report.txt
+npm error A complete log of this run can be found in: /Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/npm/_logs/2026-10-26T20_53_44_861Z-debug-0.log

@@ -1,0 +1,173 @@
+{
+  "info": {
+    "name": "owned.png",
+    "path": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/oracle/owned.png",
+    "size": 5432,
+    "type": "File",
+    "extension": ".png",
+    "created": "2024-01-02T03:04:05.000Z",
+    "modified": "2025-06-07T13:14:15.000Z",
+    "accessed": "2025-07-08T00:01:02.000Z",
+    "permissions": "644",
+    "owner": "qa-owner",
+    "group": "qa-group",
+    "isDirectory": false,
+    "mimeType": "application/octet-stream",
+    "dimensions": "2 × 2",
+    "duration": ""
+  },
+  "labels": [
+    {
+      "title": "General Information",
+      "text": ""
+    },
+    {
+      "title": "Name",
+      "text": "owned.png"
+    },
+    {
+      "title": "Type",
+      "text": "File"
+    },
+    {
+      "title": "Size",
+      "text": "5.3 KB (5,432 bytes)"
+    },
+    {
+      "title": "Extension",
+      "text": ".png"
+    },
+    {
+      "title": "MIME Type",
+      "text": "application/octet-stream"
+    },
+    {
+      "title": "Dimensions",
+      "text": "2 × 2"
+    },
+    {
+      "title": "Location",
+      "text": ""
+    },
+    {
+      "title": "Path",
+      "text": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/oracle/owned.png"
+    },
+    {
+      "title": "Timestamps",
+      "text": ""
+    },
+    {
+      "title": "Created",
+      "text": "Jan 2, 2024, 03:04:05 AM"
+    },
+    {
+      "title": "Modified",
+      "text": "Jun 7, 2025, 01:14:15 PM"
+    },
+    {
+      "title": "Accessed",
+      "text": "Jul 8, 2025, 12:01:02 AM"
+    },
+    {
+      "title": "Permissions",
+      "text": ""
+    },
+    {
+      "title": "Mode",
+      "text": "644"
+    },
+    {
+      "title": "Owner",
+      "text": "qa-owner"
+    },
+    {
+      "title": "Group",
+      "text": "qa-group"
+    }
+  ],
+  "copy": [
+    {
+      "title": "Copy File Path",
+      "content": "/Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/oracle/owned.png"
+    },
+    {
+      "title": "Copy All Info",
+      "content": "Name: owned.png\nPath: /Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/.qa/oracle/owned.png\nType: File\nSize: 5.3 KB\nExtension: .png\nCreated: Jan 2, 2024, 03:04:05 AM\nModified: Jun 7, 2025, 01:14:15 PM\nAccessed: Jul 8, 2025, 12:01:02 AM\nPermissions: 644\nOwner: qa-owner\nGroup: qa-group"
+    }
+  ],
+  "coercions": [
+    [
+      "1.2.3",
+      "0:01"
+    ],
+    [
+      "1e",
+      "0:01"
+    ],
+    [
+      "  +1.2seconds",
+      "0:01"
+    ],
+    [
+      "0x10",
+      "0:00"
+    ],
+    [
+      "Infinity",
+      "Infinity:NaN:NaN"
+    ],
+    [
+      "NaN",
+      ""
+    ],
+    [
+      "-0.1",
+      "-1:-1"
+    ],
+    [
+      "1e-2tail",
+      "0:00"
+    ]
+  ],
+  "formatBytes": [
+    [
+      0,
+      "0 Bytes"
+    ],
+    [
+      1,
+      "1 Bytes"
+    ],
+    [
+      1024,
+      "1 KB"
+    ],
+    [
+      1049600,
+      "1 MB"
+    ],
+    [
+      123456789,
+      "117.74 MB"
+    ]
+  ],
+  "formatDuration": [
+    [
+      0,
+      "0:00"
+    ],
+    [
+      59.99,
+      "0:59"
+    ],
+    [
+      60,
+      "1:00"
+    ],
+    [
+      3661.99,
+      "1:01:01"
+    ]
+  ]
+}

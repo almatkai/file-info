@@ -1,0 +1,1 @@
+PASS patch applies cleanly to pinned source copy; live host untouched

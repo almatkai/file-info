@@ -1,0 +1,30 @@
+autoindex: 2 scan threads, 2 index workers, 4 pdf workers, --bulk-mb 8 [cores=15 ram_total_mib=24576 ram_available_mib=unknown safe_zone_mib=12288]
+autoindex: bulk HTTP request timeout: 300s
+xerj-bar [????????????????????????] pct unknown | walk | eta unknown
+xerj-progress phase=walk basis=none pct=unknown items=0/0 bytes=0/0 rate=unknown eta_s=unknown eta_quality=unknown since_progress_s=0.0 phase_elapsed_s=0.0 elapsed_s=0.0
+autoindex: 17 files (4 MB) under /Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info
+autoindex: ignore rules: skipped 3 files and pruned 2 directories (contents never walked, so not counted); 3 ignore files read
+autoindex: ignore rules:   hidden:dotfile — 3 files, 2 directories pruned
+xerj-progress phase=hash basis=bytes pct=0.0 items=0/17 bytes=0/4396558 rate=unknown eta_s=unknown eta_quality=unknown since_progress_s=0.0 phase_elapsed_s=0.0 elapsed_s=0.0
+xerj-progress phase=scan basis=bytes pct=0.0 items=0/17 bytes=0/4396558 rate=unknown eta_s=unknown eta_quality=unknown since_progress_s=0.0 phase_elapsed_s=0.0 elapsed_s=0.0
+phase A: sniffing + sampling 17 files with 2 threads…
+phase A: 2 datasets inferred, 3 junk/skipped files
+estimate: at least 0.0 s–0.0 s — a MEASURED FLOOR for client-side extraction, not a prediction of the whole run: server indexing, embedding and network time are not in it
+estimate: basis — measured on this machine during phase A: 14 file(s) / 102.2 KB read end to end across 4 family/families, scheduled over 2 worker(s). Covers 102.2 KB of the 102.2 KB planned (100% of planned bytes). Client-side extraction only.
+  estimate: code           7 files   28.8 KB at 10.4 MB/s measured over 7 file(s) / 28.8 KB → 0.0 s
+  estimate: json           3 files   71.4 KB at 52.2 MB/s measured over 3 file(s) / 71.4 KB → 0.0 s
+  estimate: txt-prose      3 files    1.8 KB at 33.0 MB/s measured over 3 file(s) / 1.8 KB → 0.0 s
+  estimate: yaml           1 files     273 B at 6.9 MB/s measured over 1 file(s) / 273 B → 0.0 s
+  estimate excludes: server-side indexing, embedding and merge time (autoindex cannot measure it without writing)
+  estimate excludes: network round trips to the endpoint
+  estimate excludes: relationship detection and edge writes (--no-graph removes these)
+  estimate excludes: families with no end-to-end read in phase A, listed under unmeasured_families
+work order: source-and-docs (10 files, 30.5 KB) → config (3 files, 2.6 KB) → vendored (1 files, 69.0 KB) — biggest first inside each band at 2 worker(s); a file that outlasts everything above it starts first regardless of band
+  source-and-docs  source code and documents — what a person searches for first
+  config           configuration and small structured trees — dense, high signal per byte
+  vendored         vendored, generated or minified paths — indexed last so stopping early costs nothing you care about
+gate: not triggered — the measured extraction floor 0.0 s–0.0 s is under --max-minutes 10. That is NOT a promise the run finishes in 10 minutes: server, network and embedding time are not measured before indexing starts
+xerj-progress phase=prepare basis=items pct=0.0 items=0/2 bytes=0/0 rate=unknown eta_s=unknown eta_quality=unknown since_progress_s=0.0 phase_elapsed_s=0.0 elapsed_s=0.3
+xerj-progress phase=snapshot basis=bytes pct=0.0 items=0/17 bytes=0/4396558 rate=unknown eta_s=unknown eta_quality=unknown since_progress_s=0.0 phase_elapsed_s=0.0 elapsed_s=0.4
+xerj-done ok=false exit=1 reason=aborted wall=0.6s
+error: /Users/almat/Desktop/code/Tezbar APP/rust-extension-ports/file-info/v2/evidence/xerj-index.txt changed size during autoindex (expected 430, now 3472); retry the run
